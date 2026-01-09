@@ -1,22 +1,9 @@
-# Task 2 — Spam Email Detection (Logistic Regression)
+# Spam Email Detector - Task 2 Completed ✅
 
-## 1) Dataset (Uploaded)
-Dataset file (CSV): `spam_detection/b_babalashvili25_34521.csv`
+## What This Does
+This program detects whether an email is spam or legitimate using machine learning.
 
-The dataset contains 4 numeric features and one binary label:
-- Features: `words`, `links`, `capital_words`, `spam_word_count`
-- Label: `is_spam` (1 = spam, 0 = legitimate)
-
----
-
-## 2) Data Loading and Processing + Train/Test Split (70/30)
-
-### Data loading and feature/label selection
-```python
-import pandas as pd
-from sklearn.model_selection import train_test_split
-
-df = pd.read_csv("b_babalashvili25_34521.csv")
-
-X = df[["words", "links", "capital_words", "spam_word_count"]]
-y = df["is_spam"].astype(int)
+## Quick Start
+1. Make sure these files are in the same folder:
+   - `b_babalashvili25_34521.csv` (your data file)
+   - `complete_spam_detector.py` (the program)
